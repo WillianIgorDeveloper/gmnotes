@@ -11,3 +11,14 @@ Acredito que muitos mestres de jogo, assim como eu, limitam suas conversas sobre
 O "GM Notes" surge como o local ideal para compartilhar livremente ideias, experiências e ganchos mirabolantes com outros mestres de jogo. Mas não é só isso; aqui, você poderá esclarecer dúvidas, realizar enquetes, ensinar e aprender a arte da mestragem, quer você seja um veterano ou iniciante.
 
 Se há algo que os mestres de jogo têm em comum, é a vontade de dialogar e compartilhar conhecimento com os outros. E é exatamente para isso que o GM Notes foi criado.
+
+## Escolhas de Design
+
+- Cor:
+Neste projeto, farei uso da paleta de cores do Tailwind, destacando a cor sky como principal.
+
+- Fonte:
+Optarei pelas fontes DM Sans, DM Mono e Kalam como base, para texto normal, monoespaçado e itálico, respectivamente.
+
+- Ícone:
+A escolha recai sobre o ícone "Sorcerer", desenvolvido por Max.Icon.
