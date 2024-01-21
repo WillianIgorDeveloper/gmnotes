@@ -5,5 +5,11 @@
   "main": "index.js",
   "author": "Willian Igor",
   "license": "MIT",
-  "scripts": {}
+  "scripts": {
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4"
+  }
 }
