@@ -12,13 +12,17 @@ O "GM Notes" surge como o local ideal para compartilhar livremente ideias, exper
 
 Se há algo que os mestres de jogo têm em comum, é a vontade de dialogar e compartilhar conhecimento com os outros. E é exatamente para isso que o GM Notes foi criado.
 
-## Escolhas de Design
+### Escolhas de Design
 
-- Cor:
+- **Cor**:
 Neste projeto, farei uso da paleta de cores do Tailwind, destacando a cor sky como principal.
 
-- Fonte:
+- **Fonte**:
 Optarei pelas fontes DM Sans, DM Mono e Kalam como base, para texto normal, monoespaçado e itálico, respectivamente.
 
-- Ícone:
+- **Ícone**:
 A escolha recai sobre o ícone "Sorcerer", desenvolvido por Max.Icon.
+
+## Frameworks front-end
+- Next.JS com Typescript e tailwind
+- Shadcn/ui para biblioteca de componentes
