@@ -1,0 +1,9 @@
+{
+  "name": "gmnotes",
+  "version": "1.0.0",
+  "description": "Um site destinado a mestres de RPG compartilharem suas experiências na arte da mestragem.",
+  "main": "index.js",
+  "author": "Willian Igor",
+  "license": "MIT",
+  "scripts": {}
+}
