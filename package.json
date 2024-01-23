@@ -6,6 +6,7 @@
   "author": "Willian Igor",
   "license": "MIT",
   "scripts": {
+    "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write ."
   },
