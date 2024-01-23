@@ -15,14 +15,15 @@ Se há algo que os mestres de jogo têm em comum, é a vontade de dialogar e com
 ### Escolhas de Design
 
 - **Cor**:
-Neste projeto, farei uso da paleta de cores do Tailwind, destacando a cor sky como principal.
+  Neste projeto, farei uso da paleta de cores do Tailwind, destacando a cor sky como principal.
 
 - **Fonte**:
-Optarei pelas fontes DM Sans, DM Mono e Kalam como base, para texto normal, monoespaçado e itálico, respectivamente.
+  Optarei pelas fontes DM Sans, DM Mono e Kalam como base, para texto normal, monoespaçado e itálico, respectivamente.
 
 - **Ícone**:
-A escolha recai sobre o ícone "Sorcerer", desenvolvido por Max.Icon.
+  A escolha recai sobre o ícone "Sorcerer", desenvolvido por Max.Icon.
 
 ## Frameworks front-end
+
 - Next.JS com Typescript e tailwind
 - Shadcn/ui para biblioteca de componentes
