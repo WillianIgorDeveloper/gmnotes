@@ -1,20 +1,19 @@
 {
   "name": "gmnotes",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Um site destinado a mestres de RPG compartilharem suas experiências na arte da mestragem.",
   "main": "index.js",
   "author": "Willian Igor",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "test": "jest",
+    "lint": "npx @biomejs/biome check --apply ./src",
+    "test:run": "jest",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "prettier": "^3.2.4"
+    "@biomejs/biome": "1.7.2",
+    "jest": "^29.7.0"
   },
   "dependencies": {
     "next": "^14.1.0",
