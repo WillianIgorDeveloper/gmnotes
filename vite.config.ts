@@ -14,6 +14,7 @@ export default defineConfig({
       "@usecases": path.resolve(__dirname, "./src/modules/usecases"),
       "@components": path.resolve(__dirname, "./src/presenters/components"),
       "@contexts": path.resolve(__dirname, "./src/presenters/contexts"),
+      "@hooks": path.resolve(__dirname, "./src/presenters/hooks"),
       "@layouts": path.resolve(__dirname, "./src/presenters/layouts"),
       "@middlewares": path.resolve(__dirname, "./src/presenters/middlewares"),
       "@pages": path.resolve(__dirname, "./src/presenters/pages"),
