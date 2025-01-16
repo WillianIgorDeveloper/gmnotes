@@ -64,3 +64,17 @@
     @apply bg-background text-foreground;
   }
 }
+@font-face {
+  font-family: "Synonym";
+  src: url("/fonts/Synonym-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amulya";
+  src: url("/fonts/Amulya-Variable.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}

@@ -6,6 +6,11 @@ export default {
   content: ["./index.html", "./src/**/*.tsx"],
   plugins: [tailwindcssAnimate],
   theme: {
+    container: { center: true },
+    fontFamily: {
+      sans: ["Synonym", "ui-sans-serif", "system-ui", "sans-serif"],
+      display: ["Amulya", "ui-serif", "Georgia", "Cambria", "Times New Roman"],
+    },
     extend: {
       borderRadius: {
         lg: "calc(var(--radius) + 2px)",

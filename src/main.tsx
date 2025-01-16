@@ -1,7 +1,7 @@
+import { ROUTES } from "@utils"
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { ROUTES } from "@utils"
 import "./index.css"
 // Contexts
 import { GlobalProvider } from "@contexts/_global"
