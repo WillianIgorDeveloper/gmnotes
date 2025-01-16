@@ -1,3 +1,4 @@
+import Translator from "@/utils/lang/translator"
 import { Avatar, AvatarFallback, AvatarImage } from "@components/avatar"
 import { DropdownMenuTrigger } from "@components/dropdown-menu"
 import { DropdownMenuLabel, DropdownMenuSeparator } from "@components/dropdown-menu"
@@ -14,16 +15,18 @@ export function Profile() {
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuLabel>
+          <Translator path="components.indexTopBar.profile.label" />
+        </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <SquareUserIcon /> Profile
+          <SquareUserIcon /> <Translator path="components.indexTopBar.profile.menuItem1" />
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <NotebookTextIcon /> Posts
+          <NotebookTextIcon /> <Translator path="components.indexTopBar.profile.menuItem2" />
         </DropdownMenuItem>
         <DropdownMenuItem className="text-red-500">
-          <LogOutIcon /> Logout
+          <LogOutIcon /> <Translator path="components.indexTopBar.profile.menuItem3" />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
