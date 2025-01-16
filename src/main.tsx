@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./index.css"
 // Contexts
 import { GlobalProvider } from "@contexts/_global"
+// Layouts
+import { IndexLayout } from "@layouts/_index"
 // Pages
 import { IndexPage } from "@pages/_index"
 
@@ -13,7 +15,9 @@ createRoot(document.getElementById("root")!).render(
     <GlobalProvider>
       <BrowserRouter>
         <Routes>
-          <Route path={ROUTES.INDEX} element={<IndexPage />} />
+          <Route element={<IndexLayout />}>
+            <Route path={ROUTES.INDEX} element={<IndexPage />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </GlobalProvider>
