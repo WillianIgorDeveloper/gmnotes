@@ -1,12 +1,12 @@
-import Translator from "@/utils/lang/translator"
 import { Avatar, AvatarFallback, AvatarImage } from "@components/avatar"
 import { Button } from "@components/button"
+import { LangToggler } from "@components/lang-toggler"
 import { Sheet, SheetContent, SheetDescription } from "@components/sheet"
 import { SheetHeader, SheetTitle, SheetTrigger } from "@components/sheet"
 import { ThemeToggler } from "@components/theme-toggler"
+import { Translator } from "@utils"
 import { BookUserIcon, EarthIcon, FlameIcon, LayoutListIcon } from "lucide-react"
 import { HouseIcon, MenuIcon, NotebookTabsIcon } from "lucide-react"
-import { LangToggler } from "@components/lang-toggler"
 
 export function IndexSheet() {
   return (
@@ -96,8 +96,10 @@ export function IndexSheet() {
             </ul>
           </div>
 
-          <LangToggler />
-          <ThemeToggler />
+          <div className="flex items-center justify-between p-2">
+            <LangToggler />
+            <ThemeToggler />
+          </div>
         </div>
       </SheetContent>
     </Sheet>

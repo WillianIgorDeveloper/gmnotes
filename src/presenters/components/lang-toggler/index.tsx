@@ -1,9 +1,9 @@
-import Translator from "@/utils/lang/translator"
+import { Button } from "@components/button"
 import { DropdownMenuContent, DropdownMenuGroup } from "@components/dropdown-menu"
-import { DropdownMenuItem, DropdownMenuTrigger, DropdownMenu } from "@components/dropdown-menu"
+import { DropdownMenu, DropdownMenuItem, DropdownMenuTrigger } from "@components/dropdown-menu"
+import { Translator } from "@utils"
 import { LanguagesIcon } from "lucide-react"
 import { useTranslation } from "react-i18next"
-import { Button } from "@components/button"
 
 export function LangToggler() {
   const { i18n } = useTranslation()
@@ -15,9 +15,8 @@ export function LangToggler() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button>
+        <Button variant="outline">
           <LanguagesIcon size={16} />
-          <Translator path="components.langToggler.title" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent

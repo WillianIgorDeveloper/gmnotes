@@ -1,9 +1,9 @@
 import { Button } from "@components/button"
+// import { Translator } from "@utils"
 import { PlusIcon } from "lucide-react"
 import { Inbox } from "./inbox"
 import { Profile } from "./profile"
 import { IndexSheet } from "./sheet"
-import Translator from "@/utils/lang/translator"
 
 export function IndexTopBar() {
   return (
@@ -14,9 +14,9 @@ export function IndexTopBar() {
           <h1 className="font-display font-black text-xl">GM Notes</h1>
         </div>
         <div className="flex items-center gap-2">
-          <Button variant="outline">
+          {/* <Button variant="outline">
             <Translator path="components.indexTopBar.login" />
-          </Button>
+          </Button> */}
           <Button variant="outline" size="icon">
             <PlusIcon />
           </Button>

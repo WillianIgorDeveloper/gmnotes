@@ -17,7 +17,7 @@ export default {
           friends: "Amigos",
           following: "Seguindo",
           communities: "Comunidades",
-          seeAll: "Ver todas as comunidades",
+          seeAll: "Ver todas comunidades",
         },
       },
       langToggler: {
