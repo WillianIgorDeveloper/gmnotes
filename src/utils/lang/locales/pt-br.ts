@@ -25,6 +25,9 @@ export default {
         ptBR: "Português (Brasil)",
         enUS: "Inglês (Estados Unidos)",
       },
+      error: {
+        unexpected: "Ocorreu um erro inesperado",
+      },
     },
   },
 }
