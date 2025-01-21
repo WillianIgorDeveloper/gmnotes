@@ -1,0 +1,7 @@
+node_modules
+cypress
+.husky
+.env.exemple
+biome.json
+cypress.config.mjs
+package-lock.json

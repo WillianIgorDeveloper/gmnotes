@@ -1,0 +1,35 @@
+# docker-compose up --build
+# docker-compose down
+
+services:
+  app:
+    build: 
+      ./
+    ports:
+      - "5173:5173"
+    networks:
+      - gmnotes
+    volumes:
+      - .:/app
+    depends_on:
+      - api
+    env_file:
+      ".env.local"
+
+  api:
+    image: 
+      willianigordeveloper/gmnotes-api
+    ports:
+      - "5174:5174"
+    networks:
+      - gmnotes
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - APP_URL=http://api:5173
+
+networks:
+  gmnotes:
+    driver: bridge
