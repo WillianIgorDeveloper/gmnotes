@@ -22,7 +22,7 @@ export function AuthProvider({ children }: Readonly<{ children: React.ReactNode 
     try {
       setSessionIsLoading(true)
       const { token } = { token: "temp" }
-      localStorage.setItem(env.VITE_SESSION_TOKEN, token)
+      localStorage.setItem(env.SESSION_TOKEN, token)
       setToken(token)
       setHasSession(true)
     } catch (error) {
@@ -34,7 +34,7 @@ export function AuthProvider({ children }: Readonly<{ children: React.ReactNode 
 
   async function logout() {
     setSessionIsLoading(true)
-    localStorage.removeItem(env.VITE_SESSION_TOKEN)
+    localStorage.removeItem(env.SESSION_TOKEN)
     setToken(undefined)
     setHasSession(false)
     setSessionIsLoading(false)
@@ -42,7 +42,7 @@ export function AuthProvider({ children }: Readonly<{ children: React.ReactNode 
 
   useEffect(() => {
     async function initialLoad() {
-      const token = localStorage.getItem(env.VITE_SESSION_TOKEN)
+      const token = localStorage.getItem(env.SESSION_TOKEN)
 
       if (token) {
         try {

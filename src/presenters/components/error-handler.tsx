@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 
 export function ErrorHandler({ error }: { error: unknown }) {
   const { t } = useTranslation()
-  if (env.VITE_ENVIRONMENT === "development") console.log(error)
+  if (env.ENVIRONMENT === "development") console.log(error)
   switch (true) {
     case error instanceof DataError:
       toast({ title: t(error.message) })
