@@ -1,10 +1,10 @@
 import { Button } from "@components/button"
+import { useAuth } from "@contexts/auth"
 import { Translator } from "@utils"
 import { PlusIcon } from "lucide-react"
 import { Inbox } from "./inbox"
 import { Profile } from "./profile"
 import { IndexSheet } from "./sheet"
-import { useAuth } from "@contexts/auth"
 
 export function IndexTopBar() {
   const { hasSession, handleLogin } = useAuth()

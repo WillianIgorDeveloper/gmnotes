@@ -1,8 +1,8 @@
-import { useAuth } from "@contexts/auth"
 import { Avatar, AvatarFallback, AvatarImage } from "@components/avatar"
 import { DropdownMenuTrigger } from "@components/dropdown-menu"
 import { DropdownMenuLabel, DropdownMenuSeparator } from "@components/dropdown-menu"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem } from "@components/dropdown-menu"
+import { useAuth } from "@contexts/auth"
 import { Translator } from "@utils"
 import { LogOutIcon, NotebookTextIcon, SquareUserIcon } from "lucide-react"
 
