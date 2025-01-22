@@ -8,7 +8,7 @@ interface IAuthContext {
   hasSession: boolean
   token: string | undefined
   // Functions
-  handleLogin: (params: { login: string; password: string }) => Promise<void>
+  handleLogin: () => Promise<void>
   logout: () => Promise<void>
 }
 
@@ -18,10 +18,9 @@ export function AuthProvider({ children }: Readonly<{ children: React.ReactNode 
   const [hasSession, setHasSession] = useState<boolean>(false)
   const [token, setToken] = useState<string | undefined>(undefined)
 
-  async function handleLogin(params: { login: string; password: string }) {
+  async function handleLogin() {
     try {
       setSessionIsLoading(true)
-      console.log(params)
       const { token } = { token: "temp" }
       localStorage.setItem(env.VITE_SESSION_TOKEN, token)
       setToken(token)

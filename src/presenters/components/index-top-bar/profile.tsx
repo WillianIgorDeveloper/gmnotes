@@ -1,3 +1,4 @@
+import { useAuth } from "@contexts/auth"
 import { Avatar, AvatarFallback, AvatarImage } from "@components/avatar"
 import { DropdownMenuTrigger } from "@components/dropdown-menu"
 import { DropdownMenuLabel, DropdownMenuSeparator } from "@components/dropdown-menu"
@@ -6,6 +7,7 @@ import { Translator } from "@utils"
 import { LogOutIcon, NotebookTextIcon, SquareUserIcon } from "lucide-react"
 
 export function Profile() {
+  const { logout } = useAuth()
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
@@ -25,7 +27,7 @@ export function Profile() {
         <DropdownMenuItem>
           <NotebookTextIcon /> <Translator path="components.indexTopBar.profile.menuItem2" />
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-red-500">
+        <DropdownMenuItem className="text-red-500" onClick={logout}>
           <LogOutIcon /> <Translator path="components.indexTopBar.profile.menuItem3" />
         </DropdownMenuItem>
       </DropdownMenuContent>
