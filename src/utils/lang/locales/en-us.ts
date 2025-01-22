@@ -25,6 +25,11 @@ export default {
         ptBR: "Portuguese (Brazil)",
         enUS: "English (United States)",
       },
+      error: {
+        data: "Invalid data on request",
+        unauthorized: "User not authorized to make this request",
+        unexpected: "An unexpected error occurred",
+      },
     },
   },
 }

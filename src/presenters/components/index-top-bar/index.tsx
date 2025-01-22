@@ -1,11 +1,13 @@
 import { Button } from "@components/button"
-// import { Translator } from "@utils"
+import { useAuth } from "@contexts/auth"
+import { Translator } from "@utils"
 import { PlusIcon } from "lucide-react"
 import { Inbox } from "./inbox"
 import { Profile } from "./profile"
 import { IndexSheet } from "./sheet"
 
 export function IndexTopBar() {
+  const { hasSession, handleLogin } = useAuth()
   return (
     <header className="border-b">
       <div className="container p-3 flex justify-between">
@@ -14,14 +16,20 @@ export function IndexTopBar() {
           <h1 className="font-display font-black text-xl">GM Notes</h1>
         </div>
         <div className="flex items-center gap-2">
-          {/* <Button variant="outline">
-            <Translator path="components.indexTopBar.login" />
-          </Button> */}
-          <Button variant="outline" size="icon">
-            <PlusIcon />
-          </Button>
-          <Inbox />
-          <Profile />
+          {!hasSession && (
+            <Button variant="outline" onClick={handleLogin}>
+              <Translator path="components.indexTopBar.login" />
+            </Button>
+          )}
+          {hasSession && (
+            <>
+              <Button variant="outline" size="icon">
+                <PlusIcon />
+              </Button>
+              <Inbox />
+              <Profile />
+            </>
+          )}
         </div>
       </div>
     </header>
